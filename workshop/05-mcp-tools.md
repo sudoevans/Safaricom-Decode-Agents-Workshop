@@ -57,4 +57,53 @@ I want to order lunch for 15 people at my office. What are your catering options
 
 The agent should now return answers grounded in actual menu data and FAQ entries instead of guessing.
 
+## 5) Bonus Challenge: Build Your Own Tool 🛠️
+
+The MCP server has a third data file — `mcp-server/data/market-prices.json` — that contains wholesale ingredient prices from Wakulima and Gikomba markets. **No tool exposes this data yet.** Your task is to add one.
+
+### Goal
+
+Create a new tool called `get_market_prices` in `mcp-server/server.py` so the agent can answer questions like:
+
+```text
+What is the current wholesale price of tomatoes?
+```
+
+```text
+Which ingredients have prices that are rising?
+```
+
+```text
+Compare meat prices from the market.
+```
+
+### Step-by-step
+
+1. **Open** `mcp-server/server.py` in VS Code.
+
+2. **Add a new tool** after the existing `get_product_catalogue` tool (before the `# Entry point` section). Use the same patterns you see in the existing tools.
+
+3. **Restart the MCP server** — stop the running server (<kbd>Ctrl+C</kbd>) and start it again:
+
+```bash
+cd mcp-server
+python server.py
+```
+
+4. **Restart the MCP connection** in VS Code — open `.vscode/mcp.json` and click **Stop** then **Start** on the server entry so the Agent Builder picks up the new tool.
+
+5. **Test it** — ask the agent these questions and verify it uses your new tool:
+
+```text
+What is the wholesale price of tomatoes right now?
+```
+
+```text
+Which ingredients have rising prices? Should I be worried about food costs?
+```
+
+```text
+Bei ya nyama kwa jumla ni ngapi sasa hivi?
+```
+
 Continue to [06-evaluation.md](06-evaluation.md).
