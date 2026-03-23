@@ -1,0 +1,83 @@
+# 08 - Deploy the Chat Web App
+
+## 1) Overview
+
+The `webapp/` folder contains a standalone Flask chat interface for Biashara Bot. It connects to GitHub Models for the LLM and reuses the same JSON data files as the MCP server — no separate server process needed.
+
+```
+Browser → Flask (webapp/app.py) → GitHub Models API
+                ↓
+        mcp-server/data/*.json (menu + FAQs)
+```
+
+## 2) Install dependencies
+
+Make sure your virtual environment is active, then install the web app requirements:
+
+```bash
+pip install -r webapp/requirements.txt
+```
+
+## 3) Set your GitHub Token
+
+The web app uses GitHub Models as the LLM backend. Export your token in the terminal:
+
+```bash
+export GITHUB_TOKEN="your-github-personal-access-token"
+```
+
+> **Tip:** You can also create a `webapp/.env` file with `GITHUB_TOKEN=your-token` — the app loads `.env` files automatically.
+
+## 4) Start the web app
+
+```bash
+python webapp/app.py
+```
+
+You should see:
+
+```
+🍽️  Biashara Bot Web App starting...
+   Model: gpt-4.1-mini
+   Endpoint: https://models.github.ai/inference
+   Open http://127.0.0.1:5000 in your browser
+```
+
+## 5) Chat with Biashara Bot
+
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser. Try these questions:
+
+```text
+What do you have for breakfast?
+```
+
+```text
+Mnatuma chakula? Delivery fee ni ngapi?
+```
+
+```text
+I want to order lunch for my office — what catering options do you have?
+```
+
+The agent uses **function calling** behind the scenes — it automatically searches the FAQ and product catalogue JSON files to ground its answers in real restaurant data.
+
+## 6) How it works
+
+| Component | Description |
+|-----------|-------------|
+| `webapp/app.py` | Flask backend with the system prompt, tool definitions, and an agentic tool-calling loop |
+| `webapp/templates/index.html` | Chat UI with a green/purple Savanna Bites theme |
+| `mcp-server/data/*.json` | Shared data files (menu + FAQs) — same as the MCP server |
+| GitHub Models API | LLM inference via the OpenAI-compatible endpoint |
+
+The app mirrors the two MCP tools (`search_business_faqs`, `get_product_catalogue`) as OpenAI function-calling tools. When the model decides it needs data, Flask executes the tool locally and feeds the result back — up to 5 rounds per message.
+
+## 7) Configuration
+
+You can customise the app with environment variables:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `GITHUB_TOKEN` | *(required)* | Your GitHub personal access token |
+| `MODEL` | `gpt-4.1-mini` | Model name to use |
+| `ENDPOINT` | `https://models.github.ai/inference` | OpenAI-compatible API endpoint |
