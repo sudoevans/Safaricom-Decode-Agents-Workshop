@@ -65,9 +65,9 @@
 
 **Highlight these concepts:**
 1. **Identity** — without this, the model is lost
-2. **Language rule** — `reply in the user's language` is one of the most impactful lines
-3. **Personality** — warm, professional, honest, conversational
-4. **Save to Local** — emphasise version control. Name it `v1-basic-agent`.
+1. **Language rule** — `reply in the user's language` is one of the most impactful lines
+1. **Personality** — warm, professional, honest, conversational
+1. **Save to Local** — emphasise version control. Name it `v1-basic-agent`.
 
 **Common issue:** Participants paste incorrectly → tell them to only paste the block between the triple backticks.
 
@@ -101,14 +101,14 @@
 
 **Manual evaluation:**
 1. Walk through adding 4 test rows in the Evaluation tab
-2. Run responses and review them as a group
-3. Save as `v3-manual-evaluation`
+1. Run responses and review them as a group
+1. Save as `v3-manual-evaluation`
 
 **AI-assisted evaluation:**
 1. Add an evaluation with `relevance` and `coherence` evaluators
-2. Select `gpt-4.1-mini` as the evaluator model
-3. Run and review scores
-4. Save as `v4-automated-evaluation`
+1. Select `gpt-4.1-mini` as the evaluator model
+1. Run and review scores
+1. Save as `v4-automated-evaluation`
 
 > **Note:** The first run of AI-assisted evaluations downloads dependencies — warn participants this may take a moment.
 

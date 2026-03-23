@@ -5,12 +5,12 @@ This guide now points to split workshop sections under the [workshop](workshop/R
 ## Recommended Flow
 
 1. [workshop/01-overview.md](workshop/01-overview.md)
-2. [workshop/02-setup.md](workshop/02-setup.md)
-3. [workshop/03-model-agent.md](workshop/03-model-agent.md)
-4. [workshop/04-system-prompt.md](workshop/04-system-prompt.md)
-5. [workshop/05-mcp-tools.md](workshop/05-mcp-tools.md)
-6. [workshop/06-evaluation.md](workshop/06-evaluation.md)
-7. [workshop/07-export-code.md](workshop/07-export-code.md)
+1. [workshop/02-setup.md](workshop/02-setup.md)
+1. [workshop/03-model-agent.md](workshop/03-model-agent.md)
+1. [workshop/04-system-prompt.md](workshop/04-system-prompt.md)
+1. [workshop/05-mcp-tools.md](workshop/05-mcp-tools.md)
+1. [workshop/06-evaluation.md](workshop/06-evaluation.md)
+1. [workshop/07-export-code.md](workshop/07-export-code.md)
 
 ## Notes
 

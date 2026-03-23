@@ -10,20 +10,20 @@ It needs to handle English, Swahili, and Sheng queries about menu items,
 pricing, and ordering. Which model would you recommend from the AI Toolkit?
 ```
 
-Review the recommendations. For this workshop we use **gpt-4.1-mini** via Microsoft Foundry — it balances quality, speed, and multilingual capability.
+Review the recommendations. For this workshop we use **gpt-4.1-mini** via custom models — it balances quality, speed, and multilingual capability.
 
 ## 2) Browse the AI Toolkit Model Catalog
 
 1. Open the **AI Toolkit** in the Activity Bar.
-2. Navigate to **Model Catalog**.
-3. Browse available models and compare capabilities.
-4. Try loading two models in the **Model Playground** to compare their responses side-by-side.
+1. Navigate to **Model Catalog**.
+1. Browse available **GitHub models** and compare capabilities.
+1. Try loading two models, gpt-4.1-mini and gpt-4.1-nano, in the **Model Playground** to compare their responses side-by-side.
 
 ## 3) Create the agent in Agent Builder
 
 1. In AI Toolkit, go to **Developer Tools** → **+ Build** → **+ Create Agent** → **Open Agent Builder**.
-2. Name the agent: `Biashara Bot`
-3. For the **Model** field, select `gpt-4.1-mini` (Remote via Microsoft Foundry).
+1. Name the agent: `Biashara Bot`
+1. For the **Model** field, select `gpt-4.1-mini` 
 
 ## 4) Quick baseline test
 

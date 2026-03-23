@@ -5,8 +5,8 @@
 The Agent Builder lets you export your agent as Python code that uses the **Microsoft Agent Framework**.
 
 1. In the Agent Builder, click the **Export** button (or select **Export Code** from the menu).
-2. Review the generated code — it includes your agent instructions, model configuration, and MCP tool connections.
-3. The exported code uses `agent-framework` and `azure-identity` to connect to your Microsoft Foundry project.
+1. Review the generated code — it includes your agent instructions, model configuration, and MCP tool connections.
+1. The exported code uses `agent-framework` and `azure-identity` to connect to your Microsoft Foundry project.
 
 ## 2) Architecture recap
 
@@ -30,10 +30,10 @@ Customer → Agent Builder → MCP Server → JSON Data → Grounded Response
 ## 3) Suggested next steps
 
 1. **Add more evaluation rows** — expand your test set with 10–20 prompts covering diverse customer scenarios
-2. **Add a new FAQ** in `mcp-server/data/business-faqs.json` (e.g. WiFi availability, parking)
-3. **Add a new tool** in `mcp-server/server.py` (e.g. `check_wait_time` or `get_daily_special`)
-4. **Deploy to Microsoft Foundry** — use the exported code as a starting point for a cloud-hosted agent
-5. **Explore Responsible AI** — add [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) for production guardrails
+1. **Add a new FAQ** in `mcp-server/data/business-faqs.json` (e.g. WiFi availability, parking)
+1. **Add a new tool** in `mcp-server/server.py` (e.g. `check_wait_time` or `get_daily_special`)
+1. **Deploy to Microsoft Foundry** — use the exported code as a starting point for a cloud-hosted agent
+1. **Explore Responsible AI** — add [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) for production guardrails
 
 ## Resources
 

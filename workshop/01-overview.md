@@ -17,15 +17,17 @@ Build **Biashara Bot**, a bilingual customer assistant for a Nairobi restaurant 
 
 ## Technologies
 1. Visual Studio Code
-2. AI Toolkit extension for VS Code
-3. GitHub Copilot Agent Mode
-4. Microsoft Foundry (Azure AI)
+1. AI Toolkit extension for VS Code
+1. GitHub Copilot Agent Mode
+1. Microsoft Foundry (Azure AI)
 
 ## Prerequisites
 - VS Code with the [AI Toolkit](https://aka.ms/AIToolkit) extension
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension for VS Code
 - GitHub account with [GitHub Copilot](https://github.com/github-copilot/signup)
 - Python 3.10+
+
+## Additional pre-requisites
 - Azure subscription ([free trial](https://aka.ms/devrelft))
 - Microsoft Foundry project with a `gpt-4.1-mini` model deployment
 

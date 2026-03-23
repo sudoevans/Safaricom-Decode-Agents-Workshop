@@ -2,25 +2,17 @@
 
 ## 1) Confirm VS Code extensions
 
-Open VS Code and verify the following extensions are installed:
+Open VS Code and install the following extensions are installed:
 
 - [AI Toolkit](https://aka.ms/AIToolkit) (includes Microsoft Foundry)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
 
-> The Azure Resources extension is bundled with the Microsoft Foundry extension in AI Toolkit.
+## 2) Access to models
 
-## 2) Sign in to Azure
-
-1. Open the **Azure Resources** extension in the Activity Bar.
-2. Select **Sign in to Azure**.
-3. Sign in with the account that has your Microsoft Foundry project and `gpt-4.1-mini` deployment.
-
-## 3) Set your default Foundry project
-
-1. In the Azure Resources extension, expand your subscription and then **Microsoft Foundry**.
-2. Right-click your project name and select **Open in Microsoft Foundry Extension**.
-3. If the project is not set as default, hover over the project name in the Microsoft Foundry extension and click the **Switch Default Project** icon.
+1. **TODO**
+1. Open the **AI Toolkit** extension in the Activity Bar.
+1. Go to **My resources > connected resources** in the pop-up select **add custom model**.
+1. Add the resources from the resources tab.
 
 ## 4) Install Python dependencies
 

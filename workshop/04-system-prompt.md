@@ -28,6 +28,6 @@ If no matching items are found in the catalogue, say:
 
 ## Save this version
 
-At the top of the Agent Builder, select the dropdown → **Save to Local**. Name the version `v1-basic-agent`.
+At the top of the Agent Builder, select the dropdown → **Save to Local**. 
 
 Continue to [05-mcp-tools.md](05-mcp-tools.md).
