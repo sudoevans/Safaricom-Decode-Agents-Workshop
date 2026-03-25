@@ -48,15 +48,15 @@ You should see:
 Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser. Try these questions:
 
 ```text
-What do you have for breakfast?
+I'm in a rush — what's a quick and affordable breakfast option?
 ```
 
 ```text
-Mnatuma chakula? Delivery fee ni ngapi?
+Niko Kilimani. Mnatuma huku na ni free delivery?
 ```
 
 ```text
-I want to order lunch for my office — what catering options do you have?
+We have a meeting tomorrow with 20 people — can you handle that on short notice?
 ```
 
 The agent uses **function calling** behind the scenes — it automatically searches the FAQ and product catalogue JSON files to ground its answers in real restaurant data.

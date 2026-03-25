@@ -84,7 +84,6 @@
 - The MCP server is like a specialist on the other end — the agent calls it, it answers
 - `type: stdio` means local communication — no internet, total privacy
 
-**Live demo trick:** Before participants connect tools, capture a hallucinated answer to "What's the price of nyama choma?". Then after connecting, ask again. The diff is your teaching moment.
 
 **Remind participants to save:** After connecting tools, save as `v2-tools-agent`.
 

@@ -46,15 +46,15 @@ Back on the Agent Builder, in the **Tools** section, click on the **+** icon, ne
  Now ask questions that require grounded data:
 
 ```text
-What's on the menu for breakfast and how much does it cost?
+Nina mtu mgeni kutoka nje — recommend something authentically Kenyan for lunch.
 ```
 
 ```text
-Mnatuma chakula CBD? Delivery ni how much?
+Ninalipa na M-Pesa. Paybill ni gani na account number?
 ```
 
 ```text
-I want to order lunch for 15 people at my office. What are your catering options?
+Do you have any vegetarian options? I'm allergic to gluten too.
 ```
 
 The agent should now return answers grounded in actual menu data and FAQ entries instead of guessing.
@@ -68,15 +68,15 @@ The MCP server has a third data file — `mcp-server/data/market-prices.json` �
 Create a new tool called `get_market_prices` in `mcp-server/server.py` so the agent can answer questions like:
 
 ```text
-What is the current wholesale price of tomatoes?
+How much are onions and tomatoes at Wakulima market today?
 ```
 
 ```text
-Which ingredients have prices that are rising?
+Which vegetables have the biggest price increase this month?
 ```
 
 ```text
-Compare meat prices from the market.
+I need to budget for a catering order — what are current wholesale prices for beef and chicken?
 ```
 
 ### Step-by-step
