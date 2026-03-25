@@ -1,5 +1,21 @@
 # 04 - System Prompt
 
+## Anatomy of a Good System Prompt
+
+A well-structured system prompt typically includes these components:
+
+| Component | What it does | Example from our prompt |
+|---|---|---|
+| **Role-setting / Persona** | Tells the model *who* it is and the domain it operates in. | *"You are Biashara Bot, an intelligent and friendly AI assistant for Savanna Bites Restaurant…"* |
+| **Style & Tone** | Defines the personality, voice, and conversational feel. | *"Warm and welcoming, like a friendly waiter… Professional and knowledgeable…"* |
+| **Core Instructions (Directives)** | The concrete tasks the agent must perform — its "job description." | *"Search the restaurant's product catalogue… Clearly explain what each item is, why it's a good fit, and how much it costs."* |
+| **Expected Output Format** | Guides how responses should be structured or phrased. | The fallback message when no items match, and the instruction to be brief. |
+| **Contextual Rules** | Boundaries, safety guardrails, and language behaviour that keep the agent on-track. | The *Safety guardrails* and *Language behavior* sections. |
+
+> **Tip:** You don't have to include every component in every prompt, but covering most of them produces more reliable and predictable agent behaviour.
+
+---
+
 Paste the following into the Agent Builder **Instructions** field.
 
 ```text
