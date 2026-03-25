@@ -59,7 +59,7 @@ At the top of the Agent Builder, select the dropdown → **Save to Local**.
 
 ## Azure AI Content Safety — Your Safety Net
 
-Before we even think about hardening our system prompt, Azure AI Foundry already has your back. Every model deployed through Foundry is protected by **Azure AI Content Safety** — a platform-level content management pipeline that filters requests and responses *before* they reach the model.
+Before we even think about hardening our system prompt, Microsoft Foundry already has your back. Every model deployed through Foundry is protected by **Azure AI Content Safety** — a platform-level content management pipeline that filters requests and responses *before* they reach the model.
 
 ### Try these prompts in the Agent Builder chat
 
