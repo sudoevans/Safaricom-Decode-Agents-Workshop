@@ -1,38 +1,58 @@
 # 07 - Export Agent Code & Next Steps
 
-## 1) Export code from Agent Builder
+## 1) Why export to a Framework?
 
-The Agent Builder lets you export your agent as Python code that uses the **Microsoft Agent Framework**.
+The Agent Builder is a prototyping environment — great for iterating on prompts, tools, and evaluations. But to ship Biashara Bot to real customers (WhatsApp, a website, an internal dashboard), you need **standalone code** that can run on a server, scale, and be version-controlled.
 
-1. In the Agent Builder, click the **Export** button (or select **Export Code** from the menu).
-1. Review the generated code — it includes your agent instructions, model configuration, and MCP tool connections.
-1. The exported code uses `agent-framework` and `azure-identity` to connect to your Microsoft Foundry project.
+Exporting gives you:
 
-## 2) Architecture recap
+- **A Python project** you can commit to Git and review in PRs
+- **Reproducible deployments** — the same agent runs identically every time
+- **Integration flexibility** — embed the agent in any app (Flask, FastAPI, WhatsApp webhook, etc.)
+- **A path to Microsoft Foundry** — the exported code uses the Agent Framework SDK, which plugs directly into Foundry for production hosting, monitoring, and multi-agent orchestration
 
-```
-Customer → Agent Builder → MCP Server → JSON Data → Grounded Response
-              ↓ (export)
-         Python Code → Microsoft Agent Framework → Microsoft Foundry (production)
-```
+## 2) Export code from Agent Builder
 
-**Today's workshop maps to production like this:**
+1. In the Agent Builder, click the **View Code** button (top-right corner of the Agent Builder panel).
 
-| Workshop | Production (Microsoft Foundry) |
-|----------|-------------------------------|
-| Model selected in Agent Builder | Model deployed and benchmarked against real queries |
-| System prompt in a text box | Prompt versioning — every change tracked and testable |
-| 4 manual evaluation rows | Automated eval pipeline with hundreds of test cases |
-| AI-assisted evaluators (relevance, coherence) | Full evaluator suite with custom evaluators |
-| Local MCP server with JSON data | Production MCP server with database backend |
-| Single agent | Multi-agent orchestration |
+1. The exported code uses the **Microsoft Agent Framework** SDK and authenticates via `azure-identity` (DefaultAzureCredential) to connect to your Microsoft Foundry project.
 
-## 3) Suggested next steps
+> **Note:** The exported code is a starting point, not a finished product. You'll customise it for your deployment target.
 
+## 3) From workshop to production
+
+Everything you built today in AI Toolkit has a production-grade equivalent in Microsoft Foundry:
+
+| What we did in AI Toolkit | What you can do in Microsoft Foundry |
+|---------------------------|--------------------------------------|
+| Selected `gpt-4.1-mini` from the Model Catalog | Deploy and manage models with usage quotas, rate limits, and automatic failover |
+| Wrote a system prompt in the Instructions field | Instructions and system prompts in Foundry |
+| Connected a local MCP server with JSON data files | Connect production MCP servers backed by databases, APIs, and live services |
+| Ran 5 manual evaluation rows in the Evaluation tab | Run automated evaluation pipelines with hundreds of test cases on every commit |
+| Scored responses with relevance and coherence evaluators | Use the full evaluator suite — groundedness, fluency, safety — plus custom evaluators |
+| Tested prompt injection attacks in chat | Apply Azure AI Content Safety filters and Responsible AI dashboards at the platform level |
+| Built a single agent | Orchestrate multiple agents (e.g. order bot + delivery bot + accounts bot) |
+| Chatted at localhost:5000 | Host agents on a scalable endpoint using Hosted Agents and connect WhatsApp, web widgets, or mobile apps |
+| Exported code via **View Code** | Deploy that code directly to Foundry Hosted Agents with built-in monitoring |
+
+### What a production deployment looks like
+
+1. **Push your exported code** to a GitHub repository
+2. **Connect to Microsoft Foundry** — deploy the agent to a cloud-hosted endpoint with built-in scaling
+3. **Add a front-end** — connect the Foundry Hosted Agents endpoint to WhatsApp (via Twilio or Africa's Talking), a website chat widget, or an internal tool
+4. **Set up CI/CD evaluations** — run your evaluation suite on every code change to catch regressions before they reach customers
+5. **Monitor with Application Insights** — track response quality, latency, and tool usage in production
+
+## 4) Suggested next steps
+
+**Improve the agent:**
 1. **Add more evaluation rows** — expand your test set with 10–20 prompts covering diverse customer scenarios
 1. **Add a new FAQ** in `mcp-server/data/business-faqs.json` (e.g. WiFi availability, parking)
 1. **Add a new tool** in `mcp-server/server.py` (e.g. `check_wait_time` or `get_daily_specials`)
+
+**Take it to production:**
 1. **Deploy to Microsoft Foundry** — use the exported code as a starting point for a cloud-hosted agent
+1. **Add a customer channel** — connect the agent to WhatsApp, a website widget using hosted agents
 1. **Explore Responsible AI** — add [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) for production guardrails
 
 ## Resources
