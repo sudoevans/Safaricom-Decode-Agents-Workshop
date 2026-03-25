@@ -46,37 +46,37 @@ Back on the Agent Builder, in the **Tools** section, click on the **+** icon, ne
  Now ask questions that require grounded data:
 
 ```text
-What's on the menu for breakfast and how much does it cost?
+Nina mtu mgeni kutoka nje — recommend something authentically Kenyan for lunch.
 ```
 
 ```text
-Mnatuma chakula CBD? Delivery ni how much?
+Ninalipa na M-Pesa. Paybill ni gani na account number?
 ```
 
 ```text
-I want to order lunch for 15 people at my office. What are your catering options?
+Do you have any vegetarian options? I'm allergic to gluten too.
 ```
 
 The agent should now return answers grounded in actual menu data and FAQ entries instead of guessing.
 
 ## 5) Bonus Challenge: Build Your Own Tool 🛠️
 
-The MCP server has a third data file — `mcp-server/data/market-prices.json` — that contains wholesale ingredient prices from Wakulima and Gikomba markets. **No tool exposes this data yet.** Your task is to add one.
+The MCP server has a third data file — `mcp-server/data/daily-specials.json` — that contains today's daily specials, combo deals, and current promotions at Savanna Bites. **No tool exposes this data yet.** Your task is to add one.
 
 ### Goal
 
-Create a new tool called `get_market_prices` in `mcp-server/server.py` so the agent can answer questions like:
+Create a new tool called `get_daily_specials` in `mcp-server/server.py` so the agent can answer questions like:
 
 ```text
-What is the current wholesale price of tomatoes?
+What's today's special at Savanna Bites?
 ```
 
 ```text
-Which ingredients have prices that are rising?
+Do you have any combo deals for lunch?
 ```
 
 ```text
-Compare meat prices from the market.
+Kuna offers zozote wiki hii?
 ```
 
 ### Step-by-step
@@ -99,15 +99,15 @@ python server.py
 5. **Test it** — ask the agent these questions and verify it uses your new tool:
 
 ```text
-What is the wholesale price of tomatoes right now?
+I'm coming in on Friday — any special deals?
 ```
 
 ```text
-Which ingredients have rising prices? Should I be worried about food costs?
+Is there a good deal for a group of four on Saturday?
 ```
 
 ```text
-Bei ya nyama kwa jumla ni ngapi sasa hivi?
+Mna promotion yoyote ya delivery wiki hii?
 ```
 ### Save again
 

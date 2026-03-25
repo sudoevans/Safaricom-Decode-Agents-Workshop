@@ -30,7 +30,7 @@ For this workshop we use **gpt-4.1-mini** via custom models — it balances qual
 Before adding a system prompt or tools, send a message:
 
 ```text
-What's on the menu for lunch today?
+Do you have chapati and beans? How much is it?
 ```
 
 The agent gives a generic answer because it has no context about the restaurant. The next sections fix this.
