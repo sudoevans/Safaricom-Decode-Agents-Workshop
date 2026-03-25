@@ -90,3 +90,5 @@ You can customise the app with environment variables:
 | `GITHUB_TOKEN` | *(required)* | Your GitHub personal access token |
 | `MODEL` | `gpt-4.1-mini` | Model name to use |
 | `ENDPOINT` | `https://models.github.ai/inference` | OpenAI-compatible API endpoint |
+
+Continue to [07-export-code.md](07-export-code.md).

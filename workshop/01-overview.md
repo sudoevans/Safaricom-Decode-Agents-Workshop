@@ -20,15 +20,12 @@ Build **Biashara Bot**, a bilingual customer assistant for Savanna Bites restaur
 
 1. Visual Studio Code
 1. AI Toolkit extension for VS Code
-1. GitHub Copilot Agent Mode
-1. Microsoft Foundry
 
 ## Prerequisites
 
-- VS Code with the [AI Toolkit](https://aka.ms/AIToolkit) extension
+- VS Code with the [AI Toolkit](https://aka.ms/AIToolkit) extension, version 0.32.1
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension for VS Code
-- GitHub account with [GitHub Copilot](https://github.com/github-copilot/signup)
-- Python 3.10+
+- GitHub account (with [GitHub Copilot](https://github.com/github-copilot/signup))
 
 ## Additional pre-requisites
 

@@ -46,4 +46,4 @@ that answers menu, pricing, delivery, and catering questions?
 
 Copilot can recommend additional evaluators beyond relevance and coherence (e.g., groundedness, fluency) that you can add to future evaluation runs.
 
-Continue to [07-export-code.md](07-export-code.md).
+Continue to [07-web-app.md](07-web-app.md).

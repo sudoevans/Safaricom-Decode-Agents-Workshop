@@ -4,7 +4,7 @@
 
 Open VS Code and ensure the following extensions are installed:
 
-- [AI Toolkit](https://aka.ms/AIToolkit) (includes Microsoft Foundry)
+- [AI Toolkit](https://aka.ms/AIToolkit)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ## 2) Access to models
