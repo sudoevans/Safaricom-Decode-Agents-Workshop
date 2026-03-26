@@ -9,9 +9,11 @@ Open VS Code and ensure the following extensions are installed:
 
 ## 2) Access to models
 
-1. Head over to event link: *## will be added day of the event*
+1. Head over to the event link provided by your facilitator.
 1. Follow the instructions to generate your API Key
 1. Once you get your Event API keys, follow the next set of instructions below to add your models to AI Toolkit
+
+> **Note to facilitators:** Update the event link before the session. See [facilitator-notes.md](../facilitator-notes.md).
 
 ## 3) Add models to AI Toolkit
 
@@ -25,16 +27,28 @@ Open VS Code and ensure the following extensions are installed:
 
 ## 4) Install Python dependencies
 
+Create and activate a virtual environment, then install the dependencies:
+
 ```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-If needed, use `pip3` instead of `pip`.
+If needed, use `python3` instead of `python`.
 
 ## 5) Start the MCP server
 
 ```bash
 python mcp-server/server.py
+```
+
+You should see output like:
+
+```
+Starting Biashara Bot MCP Data Server (HTTP)...
+📡 MCP endpoint available at: http://127.0.0.1:8000/mcp
+Tools available: search_business_faqs, get_product_catalogue
 ```
 
 Keep this terminal running.

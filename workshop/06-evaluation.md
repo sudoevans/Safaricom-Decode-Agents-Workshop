@@ -2,6 +2,8 @@
 
 ## 1) Manual evaluation
 
+<!-- TODO: Add screenshot of the Evaluation tab in Agent Builder -->
+
 In the Agent Builder, switch to the **Evaluation** tab.
 
 1. Select **+ Add an Empty Row** five times to create 5 test rows.
@@ -26,6 +28,8 @@ In the Agent Builder, switch to the **Evaluation** tab.
 ## 2) AI-assisted evaluation
 
 Use built-in evaluators to automatically score agent responses.
+
+<!-- TODO: Add screenshot of the Add Evaluation dialog with evaluator selection -->
 
 1. Create a new evaluation via the **Add Evaluation** button.
 1. Select the following evaluators: `relevance`, `coherence`.
