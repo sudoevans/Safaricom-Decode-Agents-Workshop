@@ -37,7 +37,7 @@ Use built-in evaluators to automatically score agent responses.
 1. Select **Run Evaluation** → **Run Evaluation Only**.
 1. Review the scores for each response.
 
-> **Note:** The first time you run AI-assisted evaluations, the AI Toolkit will download and install required dependencies. This may take a moment.
+> **Note:** The first time you run AI-assisted evaluations, the Microsoft Foundry Toolkit will download and install required dependencies. This may take a moment.
 
 ## 3) Use GitHub Copilot for evaluator recommendations
 

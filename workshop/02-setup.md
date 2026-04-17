@@ -4,18 +4,18 @@
 
 Open VS Code and ensure the following extensions are installed:
 
-- [AI Toolkit](https://aka.ms/AIToolkit)
+- [Microsoft Foundry Toolkit](https://aka.ms/AIToolkit)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ## 2) Access to models
 
 1. Head over to the event link: [https://gray-wave-002399710.1.azurestaticapps.net/event/3268-88a1](https://gray-wave-002399710.1.azurestaticapps.net/event/3268-88a1).
 1. Follow the instructions to generate your API Key
-1. Once you get your Event API keys, follow the next set of instructions below to add your models to AI Toolkit
+1. Once you get your Event API keys, follow the next set of instructions below to add your models to Microsoft Foundry Toolkit
 
-## 3) Add models to AI Toolkit
+## 3) Add models to Microsoft Foundry Toolkit
 
-1. Open the **AI Toolkit** extension in the Activity Bar.
+1. Open the **Microsoft Foundry Toolkit** extension in the Activity Bar.
 1. Go to **My resources > connected resources**, hover on **Models** and click on the **+** sign. Select **Add Custom Model**.
 1. **Endpoint URL.** Copy the **gpt-4.1-mini Endpoint** value from the event.link, paste it here, then click enter
 1. **Model name.** Copy the **Model** value from the event.link, paste it here, then click enter

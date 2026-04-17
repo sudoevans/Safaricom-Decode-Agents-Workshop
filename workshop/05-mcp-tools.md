@@ -11,7 +11,7 @@
 1. Scroll to the **Tools** section of the Agent Builder.
 1. Click on the **+** icon, next to tools then select, **MCP Server > Could not find one? Browse more MCP Servers**
 1. In the new tab, select **Custom** then click the **Edit** button under **mcp.json**.
-1. A new **mcp.json** file will open — this is the AI Toolkit's own MCP config (separate from the `.vscode/mcp.json` in the workspace). Paste the following code into this file:
+1. A new **mcp.json** file will open — this is the Microsoft Foundry Toolkit's own MCP config (separate from the `.vscode/mcp.json` in the workspace). Paste the following code into this file:
 
 ```json
 {
