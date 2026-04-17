@@ -27,9 +27,9 @@ Exporting gives you:
 
 ## 3) From workshop to production
 
-Everything you built today in AI Toolkit has a production-grade equivalent in Microsoft Foundry:
+Everything you built today in Microsoft Foundry Toolkit has a production-grade equivalent in Microsoft Foundry:
 
-| What we did in AI Toolkit | What you can do in Microsoft Foundry |
+| What we did in Microsoft Foundry Toolkit | What you can do in Microsoft Foundry |
 |---------------------------|--------------------------------------|
 | Selected `gpt-4.1-mini` from the Model Catalog | Deploy and manage models with usage quotas, rate limits, and automatic failover |
 | Wrote a system prompt in the Instructions field | Instructions and system prompts in Foundry |
@@ -65,7 +65,7 @@ Everything you built today in AI Toolkit has a production-grade equivalent in Mi
 
 | Resource | Link |
 |----------|------|
-| AI Toolkit | https://aka.ms/AIToolkit |
+| Microsoft Foundry Toolkit | https://aka.ms/AIToolkit |
 | Microsoft Foundry | https://ai.azure.com/ |
 | GitHub Copilot Agent Mode | https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode |
 | Azure AI Content Safety | https://learn.microsoft.com/azure/ai-services/content-safety/overview |

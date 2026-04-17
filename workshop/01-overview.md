@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build **Biashara Agent**, a bilingual customer assistant for Savanna Bites restaurant (Nairobi) using **Microsoft Foundry** and the **AI Toolkit** in VS Code.
+Build **Biashara Agent**, a bilingual customer assistant for Savanna Bites restaurant (Nairobi) using **Microsoft Foundry** and the **Microsoft Foundry Toolkit** in VS Code.
 
 ## Time
 
@@ -10,7 +10,7 @@ Build **Biashara Agent**, a bilingual customer assistant for Savanna Bites resta
 
 ## Learning Outcomes
 
-- Explore and compare models with the AI Toolkit Playground
+- Explore and compare models with the Microsoft Foundry Toolkit Playground
 - Create an agent in the Agent Builder and define its system prompt
 - Connect MCP tools so the agent returns grounded answers from real data
 - Run manual and AI-assisted evaluations on agent responses
@@ -20,11 +20,11 @@ Build **Biashara Agent**, a bilingual customer assistant for Savanna Bites resta
 ## Technologies
 
 1. Visual Studio Code
-1. AI Toolkit extension for VS Code
+1. Microsoft Foundry Toolkit extension for VS Code
 
 ## Prerequisites
 
-- VS Code with the [AI Toolkit](https://aka.ms/AIToolkit) extension (version 0.32.1 or later)
+- VS Code with the [Microsoft Foundry Toolkit](https://aka.ms/AIToolkit) extension (version 0.32.1 or later)
 - [Python 3.10+](https://www.python.org/downloads/) installed on your machine
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension for VS Code
 - GitHub account (with [GitHub Copilot](https://github.com/github-copilot/signup))

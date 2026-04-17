@@ -3,7 +3,7 @@
 
 > **For facilitators only.** Participants use [lab-guide.md](lab-guide.md).
 >
-> Based on [BRK441: Build and launch AI agents fast with Microsoft Foundry and the AI Toolkit](https://github.com/microsoft/aitour26-BRK441-Build-and-launch-AI-agents-fast-with-Microsoft-Foundry-and-the-AI-Toolkit)
+> Based on [BRK441: Build and launch AI agents fast with Microsoft Foundry and the Microsoft Foundry Toolkit](https://github.com/microsoft/aitour26-BRK441-Build-and-launch-AI-agents-fast-with-Microsoft-Foundry-and-the-AI-Toolkit)
 
 ---
 
@@ -14,13 +14,13 @@
 | **Session length** | 45–60 minutes |
 | **Room setup** | Participants at individual laptops, facilitators circulating |
 | **Participant level** | Beginners — no prior AI or agent experience assumed |
-| **Target outcome** | Every participant has a working, bilingual, MCP-connected agent running in AI Toolkit with evaluations |
+| **Target outcome** | Every participant has a working, bilingual, MCP-connected agent running in Microsoft Foundry Toolkit with evaluations |
 
 ---
 
 ## Prerequisites (30 min before)
 
-- [ ] Visual Studio Code with AI Toolkit extension
+- [ ] Visual Studio Code with Microsoft Foundry Toolkit extension
 - [ ] GitHub account with GitHub Copilot subscription
 - [ ] Python 3.10+
 - [ ] Azure subscription with a Microsoft Foundry project
@@ -30,7 +30,7 @@
 
 ### 0:00 — Welcome & Framing (3 min)
 **What to say:**
-> "Today you're going to build a real AI agent — not a chatbot that just regurgitates answers, but one that reasons, fetches data, and follows rules. The scenario: Savanna Bites Restaurant in Nairobi CBD needs a 24/7 bilingual assistant. You'll build it using Microsoft Foundry and the AI Toolkit."
+> "Today you're going to build a real AI agent — not a chatbot that just regurgitates answers, but one that reasons, fetches data, and follows rules. The scenario: Savanna Bites Restaurant in Nairobi CBD needs a 24/7 bilingual assistant. You'll build it using Microsoft Foundry and the Microsoft Foundry Toolkit."
 
 **Key hook:** Show them the final working bot first (2-minute demo). Reverse-engineer from the outcome. This sets expectations and builds excitement.
 
@@ -39,7 +39,7 @@
 ### 0:03 — Part 0: Setup (5 min)
 **Watch for:**
 - Participants who don't have Python 3.10+ → direct them to `python.org` or use a nearby machine
-- AI Toolkit extension not installed → install from VS Code marketplace
+- Microsoft Foundry Toolkit extension not installed → install from VS Code marketplace
 - Azure sign-in issues → help with `az login` or Azure Resources extension sign-in
 - Microsoft Foundry project not set as default → walk them through the Azure Resources → Microsoft Foundry setup
 
@@ -49,7 +49,7 @@
 
 ### 0:08 — Part 1: Model Exploration & Agent Creation (8 min)
 **What to say:**
-> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then browse the AI Toolkit Model Catalog. Our model today is gpt-4.1-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
+> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then browse the Microsoft Foundry Toolkit Model Catalog. Our model today is gpt-4.1-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
 
 **Common issue:** GitHub Copilot not available.
 - Ensure participant is signed into GitHub in VS Code (`Ctrl+Shift+P` → "Sign in to GitHub")
@@ -96,7 +96,7 @@
 
 ### 0:36 — Part 4: Evaluation (12 min)
 **What to say:**
-> "In a real project, you don't ship an agent by 'it seems to work'. You write test cases and run them. The AI Toolkit lets you do manual evaluation AND AI-assisted evaluation right inside the Agent Builder."
+> "In a real project, you don't ship an agent by 'it seems to work'. You write test cases and run them. The Microsoft Foundry Toolkit lets you do manual evaluation AND AI-assisted evaluation right inside the Agent Builder."
 
 **Manual evaluation:**
 1. Walk through adding 4 test rows in the Evaluation tab
@@ -181,5 +181,5 @@ By end of session, each participant should be able to answer:
 If participants want to keep their work:
 - Share the GitHub repo link (update the link in `lab-guide.md` before the session)
 - Encourage them to add their own FAQs to `business-faqs.json` for their real businesses
-- Point them to the **AI Toolkit documentation** and **Microsoft Foundry** for next steps
+- Point them to the **Microsoft Foundry Toolkit documentation** and **Microsoft Foundry** for next steps
 - Share the BRK441 reference repo: https://github.com/microsoft/aitour26-BRK441-Build-and-launch-AI-agents-fast-with-Microsoft-Foundry-and-the-AI-Toolkit

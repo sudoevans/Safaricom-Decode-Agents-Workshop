@@ -3,10 +3,10 @@ Savanna Bites Restaurant — Biashara Agent MCP Data Server
 =======================================================
 A FastMCP server that exposes business data for the Biashara Agent AI agent.
 Participants: you do NOT need to edit this file during the workshop.
-Just run it, then configure your AI Toolkit agent to use it.
+Just run it, then configure your Microsoft Foundry Toolkit agent to use it.
 
 Supports two transport modes:
-  stdio: python mcp-server/server.py --stdio   (used by AI Toolkit Agent Builder)
+  stdio: python mcp-server/server.py --stdio   (used by Microsoft Foundry Toolkit Agent Builder)
   http:  python mcp-server/server.py            (runs at http://127.0.0.1:8000/mcp)
 """
 
@@ -148,7 +148,7 @@ def main() -> None:
     parser.add_argument(
         "--stdio",
         action="store_true",
-        help="Run server in stdio mode (used by AI Toolkit Agent Builder)",
+        help="Run server in stdio mode (used by Microsoft Foundry Toolkit Agent Builder)",
     )
     args = parser.parse_args()
 

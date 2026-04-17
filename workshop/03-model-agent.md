@@ -5,18 +5,18 @@
 Open **GitHub Copilot Chat** in VS Code and switch to **Agent Mode**. Ask Copilot to recommend a model for your use case:
 
 ```text
-I'm building a bilingual AI customer assistant for Savanna Bites restaurant in Nairobi. It needs to handle English, Swahili, and Sheng queries about menu items, pricing, and ordering. Which model would you recommend from the AI Toolkit?
+I'm building a bilingual AI customer assistant for Savanna Bites restaurant in Nairobi. It needs to handle English, Swahili, and Sheng queries about menu items, pricing, and ordering. Which model would you recommend from the Microsoft Foundry Toolkit?
 ```
 
 Review the recommendations.
 
 For this workshop we use **gpt-4.1-mini** via custom models — it balances quality, speed, and multilingual capability.
 
-## 2) Browse the AI Toolkit Model Catalog
+## 2) Browse the Microsoft Foundry Toolkit Model Catalog
 
-<!-- TODO: Add screenshot of AI Toolkit icon in the Activity Bar -->
+<!-- TODO: Add screenshot of Microsoft Foundry Toolkit icon in the Activity Bar -->
 
-1. Open the **AI Toolkit** in the Activity Bar (look for the AI Toolkit icon in the left sidebar).
+1. Open the **Microsoft Foundry Toolkit** in the Activity Bar (look for the Microsoft Foundry Toolkit icon in the left sidebar).
 1. Navigate to **Developer Tools > Discover > Model Catalog**.
 
 <!-- TODO: Add screenshot of the Model Catalog view -->
@@ -34,7 +34,7 @@ For this workshop we use **gpt-4.1-mini** via custom models — it balances qual
 
 <!-- TODO: Add screenshot of the Agent Builder creation flow -->
 
-1. In AI Toolkit, go to **Developer Tools** → **+ Build** → **+ Create Agent** → **Open Agent Builder**.
+1. In Microsoft Foundry Toolkit, go to **Developer Tools** → **+ Build** → **+ Create Agent** → **Open Agent Builder**.
 1. Name the agent: `Biashara-Bot`
 1. For the **Model** field, select `gpt-4.1-mini` 
 
