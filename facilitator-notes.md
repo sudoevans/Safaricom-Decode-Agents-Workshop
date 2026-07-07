@@ -39,7 +39,7 @@
 ### 0:03 — Part 0: Setup (5 min)
 **Watch for:**
 - Participants who don't have Python 3.10+ → direct them to `python.org` or use a nearby machine
-- Microsoft Foundry Toolkit extension not installed → install from VS Code marketplace
+- Foundry Toolkit extension not installed → install from VS Code marketplace
 - Azure sign-in issues → help with `az login` or Azure Resources extension sign-in
 - Microsoft Foundry project not set as default → walk them through the Azure Resources → Microsoft Foundry setup
 

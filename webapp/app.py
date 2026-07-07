@@ -3,13 +3,21 @@ Biashara Agent — Chat Web App
 ============================
 A Flask web app that lets you chat with the Savanna Bites Restaurant AI agent.
 
-The app connects to GitHub Models (or any OpenAI-compatible endpoint) for the LLM
+The app connects to Microsoft Foundry (Microsoft Foundry or Foundry Local) for the LLM
 and reuses the MCP server's JSON data files for tool responses.
 
-Usage:
-  1. Set your GITHUB_TOKEN:  export GITHUB_TOKEN="your-token"
+Usage (Microsoft Foundry):
+  1. Set your endpoint and key:
+       export AZURE_AI_ENDPOINT="https://<your-project>.services.ai.azure.com"
+       export AZURE_AI_KEY="your-api-key"
   2. Start the app:          python webapp/app.py
   3. Open in browser:        http://127.0.0.1:5000
+
+Usage (Foundry Local — no API key needed):
+  1. Start Foundry Local:    foundry local start
+  2. Set env var:            export USE_FOUNDRY_LOCAL=true
+  3. Start the app:          python webapp/app.py
+  4. Open in browser:        http://127.0.0.1:5000
 """
 
 import json
@@ -25,14 +33,23 @@ load_dotenv()
 app = Flask(__name__)
 
 # --------------- Configuration ---------------
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-MODEL = os.environ.get("MODEL", "gpt-4.1-mini")
-ENDPOINT = os.environ.get("ENDPOINT", "https://models.github.ai/inference")
+USE_FOUNDRY_LOCAL = os.environ.get("USE_FOUNDRY_LOCAL", "").lower() in ("true", "1", "yes")
+
+if USE_FOUNDRY_LOCAL:
+    # Foundry Local: runs locally, no API key required
+    ENDPOINT = os.environ.get("ENDPOINT", "http://localhost:5272/v1")
+    API_KEY = "foundry-local"  # placeholder, not validated by Foundry Local
+    MODEL = os.environ.get("MODEL", "phi-4")
+else:
+    # Microsoft Foundry: cloud endpoint with API key
+    ENDPOINT = os.environ.get("AZURE_AI_ENDPOINT", "")
+    API_KEY = os.environ.get("AZURE_AI_KEY", "")
+    MODEL = os.environ.get("MODEL", "gpt-4.1-mini")
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "mcp-server", "data")
 
 SYSTEM_PROMPT = (
-    "You are Biashara Agent, an intelligent and friendly AI assistant for "
+    "You are Biashara Agent, an intelligent and friendly AI agent for "
     "Savanna Bites Restaurant in Nairobi CBD. You help customers with their "
     "dining needs by understanding what they are looking for and recommending "
     "the most suitable items from the menu.\n\n"
@@ -215,7 +232,7 @@ def chat():
 
     conversations[session_id].append({"role": "user", "content": user_message})
 
-    client = OpenAI(base_url=ENDPOINT, api_key=GITHUB_TOKEN)
+    client = OpenAI(base_url=ENDPOINT, api_key=API_KEY)
 
     # Agentic tool-calling loop (max 5 rounds to prevent runaway)
     for _ in range(5):
@@ -265,12 +282,21 @@ def reset():
 
 
 if __name__ == "__main__":
-    if not GITHUB_TOKEN:
-        print("⚠️  GITHUB_TOKEN is not set. Export it first:")
-        print("   export GITHUB_TOKEN='your-github-token'")
+    if not USE_FOUNDRY_LOCAL and (not ENDPOINT or not API_KEY):
+        print("⚠️  No credentials configured. Choose one option:")
+        print()
+        print("   Option A — Microsoft Foundry:")
+        print("     export AZURE_AI_ENDPOINT='https://<project>.services.ai.azure.com'")
+        print("     export AZURE_AI_KEY='your-api-key'")
+        print()
+        print("   Option B — Foundry Local (no key needed):")
+        print("     foundry local start")
+        print("     export USE_FOUNDRY_LOCAL=true")
+        print()
         print("   Then re-run: python webapp/app.py")
         exit(1)
     print(f"🍽️  Biashara Agent Web App starting...")
+    print(f"   Backend: {'Foundry Local' if USE_FOUNDRY_LOCAL else 'Microsoft Foundry'}")
     print(f"   Model: {MODEL}")
     print(f"   Endpoint: {ENDPOINT}")
     print(f"   Open http://127.0.0.1:5000 in your browser")

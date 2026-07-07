@@ -9,7 +9,8 @@ Open VS Code and ensure the following extensions are installed:
 
 ## 2) Access to models
 
-1. Head over to the event link: [https://gray-wave-002399710.1.azurestaticapps.net/event/3268-88a1](https://gray-wave-002399710.1.azurestaticapps.net/event/3268-88a1).
+### If you are in an event
+1. Head over to the event link: **link will be provided**
 1. Follow the instructions to generate your API Key
 1. Once you get your Event API keys, follow the next set of instructions below to add your models to Microsoft Foundry Toolkit
 
@@ -22,6 +23,17 @@ Open VS Code and ensure the following extensions are installed:
 1. **Display model name.** Leave default model name as is, then click enter.
 1. **API Key.** Copy the **Event API Key** value from the event.link, paste it here, then click enter
 1. A pop up will appear on your right with the following title, **Model added successfully. Try the model in the playground.**
+
+### If you are doing the session at home with access to Microsoft Foundry.
+1. Open the **Foundry Toolkit** extension in the Activity Bar.
+1. Go to **My resources > your Microsoft Foundry project > Models.**
+1. In the models drop down, select **gpt-4.1-mini** model.
+
+### If you are using Foundry Local
+1. Open the **Foundry Toolkit** extension in the Activity Bar.
+1. Go to **My resources > Local Models.**
+1. Select a model (e.g. **phi-4**) — it will download if not already cached.
+1. The model is ready to use in the playground and in your web app (no API key required).
 
 ## 4) Install Python dependencies
 
