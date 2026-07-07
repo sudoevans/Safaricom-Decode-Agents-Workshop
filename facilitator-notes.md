@@ -49,7 +49,7 @@
 
 ### 0:08 — Part 1: Model Exploration & Agent Creation (8 min)
 **What to say:**
-> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then browse the Foundry Toolkit Model Catalog. Our model today is gpt-4.1-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
+> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then create the agent in Agent Builder. Our model today is gpt-4.1-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
 
 **Common issue:** GitHub Copilot not available.
 - Ensure participant is signed into GitHub in VS Code (`Ctrl+Shift+P` → "Sign in to GitHub")
