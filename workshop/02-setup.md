@@ -16,7 +16,7 @@ Open VS Code and ensure the following extensions are installed:
 
 ### If you are doing the session at home with access to Microsoft Foundry.
 
-> :pushpin: You need access to Microsoft Foundry account either through an Azure subscription or using a Azure Free Trial
+> :pushpin: You need access to a Microsoft Foundry account either through an Azure subscription or an Azure Free Trial
 
 1. Go to [Microsoft Foundry](https://ai.azure.com) and create a new project.
 1. In the new project created, deploy a **gpt-4-mini** model.
