@@ -4,7 +4,7 @@
 
 Open VS Code and ensure the following extensions are installed:
 
-- [Foundry Toolkit](https://aka.ms/AIToolkit)
+- [Microsoft Foundry Toolkit](https://aka.ms/AIToolkit)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ## 2) Access to models
@@ -12,29 +12,11 @@ Open VS Code and ensure the following extensions are installed:
 ### If you are in an event
 1. Head over to the event link: **link will be provided**
 1. Follow the instructions to generate your API Key
-1. Once you get your Event API keys, follow the next set of instructions below to add your models to Foundry Toolkit
+1. Once you get your Event API keys, follow the next set of instructions below to add your models to Microsoft Foundry Toolkit
 
-### If you are doing the session at home with access to Microsoft Foundry.
+## 3) Add models to Microsoft Foundry Toolkit
 
-> :pushpin: You need access to a Microsoft Foundry account either through an Azure subscription or an Azure Free Trial
-
-1. Go to [Microsoft Foundry](https://ai.azure.com) and create a new project.
-1. In the new project created, deploy a **gpt-4.1-mini** model.
-1. In VS Code, navigate to **Foundry Toolkit > My resources > Microsoft Foundry resources > Set Default Project**
-
-### If you want to run models locally with Foundry Local
-
-> :pushpin: Foundry Local lets you run models on your own machine — no cloud account or API key needed.
-
-1. Install Foundry Local following the [getting started guide](https://learn.microsoft.com/ai/foundry-local/get-started).
-1. In your terminal, run `foundry local start` to start the local inference server.
-1. In VS Code, open the **Foundry Toolkit** extension in the Activity Bar.
-1. Go to **My resources > Local Models** — you'll see models available for local inference (e.g. `phi-4`).
-
-## 3) Add models to Foundry Toolkit
-
-### If you are in an event
-1. Open the **Foundry Toolkit** extension in the Activity Bar.
+1. Open the **Microsoft Foundry Toolkit** extension in the Activity Bar.
 1. Go to **My resources > connected resources**, hover on **Models** and click on the **+** sign. Select **Add Custom Model**.
 1. **Endpoint URL.** Copy the **gpt-4.1-mini Endpoint** value from the event.link, paste it here, then click enter
 1. **Model name.** Copy the **Model** value from the event.link, paste it here, then click enter
