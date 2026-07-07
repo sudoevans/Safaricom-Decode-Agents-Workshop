@@ -31,7 +31,7 @@ Then follow the workshop steps starting at [workshop/01-overview.md](workshop/01
 
 ## Workshop Flow
 
-1. **Explore & Compare Models** — use GitHub Copilot Agent Mode and Foundry Toolkit Model Catalog
+1. **Explore & Compare Models** — use GitHub Copilot Agent Mode (optional) and the Foundry Toolkit Playground
 1. **Create Agent** — set up Biashara Agent in Agent Builder with `gpt-4.1-mini` via Microsoft Foundry
 1. **System Prompt** — define the agent's personality, role, and language behaviour
 1. **MCP Tools** — connect the local data server for grounded answers
