@@ -44,7 +44,7 @@ else:
     # Microsoft Foundry: cloud endpoint with API key
     ENDPOINT = os.environ.get("AZURE_AI_ENDPOINT", "")
     API_KEY = os.environ.get("AZURE_AI_KEY", "")
-    MODEL = os.environ.get("MODEL", "gpt-4.1")
+    MODEL = os.environ.get("MODEL", "gpt-4.1-mini")
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "mcp-server", "data")
 
