@@ -21,7 +21,7 @@ For this workshop we use **gpt-4.1-mini** via custom models — it balances qual
 1. For the **Model** field, select `gpt-4.1-mini` 
 1. In the top right, on the **Save to Foundry** button, click the drop down option and select **Save to Local.**
 
-## 2) Quick baseline test
+## 3) Quick baseline test
 
 Before adding a system prompt or tools, send a message:
 
