@@ -282,7 +282,7 @@ def reset():
 
 
 if __name__ == "__main__":
-    if not USE_FOUNDRY_LOCAL and not API_KEY:
+    if not USE_FOUNDRY_LOCAL and (not ENDPOINT or not API_KEY):
         print("⚠️  No credentials configured. Choose one option:")
         print()
         print("   Option A — Microsoft Foundry:")
