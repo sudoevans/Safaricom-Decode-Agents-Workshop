@@ -18,8 +18,8 @@ For this workshop we use **gpt-4.1-mini** via custom models — it balances qual
 
 1. In Foundry Toolkit, go to **Developer Tools** → **+ Build** → **+ Create Agent** → **Open Agent Builder**.
 1. Name the agent: `Biashara-Bot`
-1. For the **Model** field, select `gpt-4.1-mini` 
-1. In the top right, on the **Save to Foundry** button, click the drop down option and select **Save to Local.**
+1. For the **Model** field, select `gpt-4.1-mini`
+1. In the top right, on the **Save to Foundry** button, click the drop-down and select **Save to Local**.
 
 ## 3) Quick baseline test
 
