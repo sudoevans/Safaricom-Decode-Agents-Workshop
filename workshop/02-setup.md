@@ -18,7 +18,7 @@ Open VS Code and ensure the following extensions are installed:
 
 1. Open the **Microsoft Foundry Toolkit** extension in the Activity Bar.
 1. Go to **My resources > connected resources**, hover on **Models** and click on the **+** sign. Select **Add Custom Model**.
-1. **Endpoint URL.** Copy the **gpt-4.1-mini Endpoint** value from the event.link, paste it here, then click enter
+1. **Endpoint URL.** Copy the **gpt-5-mini Endpoint** value from the event.link, paste it here, then click enter
 1. **Model name.** Copy the **Model** value from the event.link, paste it here, then click enter
 1. **Display model name.** Leave default model name as is, then click enter.
 1. **API Key.** Copy the **Event API Key** value from the event.link, paste it here, then click enter
@@ -27,7 +27,7 @@ Open VS Code and ensure the following extensions are installed:
 ### If you are doing the session at home with access to Microsoft Foundry.
 1. Open the **Foundry Toolkit** extension in the Activity Bar.
 1. Go to **My resources > your Microsoft Foundry project > Models.**
-1. In the models drop down, select **gpt-4.1-mini** model.
+1. In the models drop down, select **gpt-5-mini** model.
 
 ### If you are using Foundry Local
 1. Open the **Foundry Toolkit** extension in the Activity Bar.

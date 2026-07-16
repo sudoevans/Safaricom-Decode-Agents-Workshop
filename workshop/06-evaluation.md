@@ -33,7 +33,7 @@ Use built-in evaluators to automatically score agent responses.
 
 1. Create a new evaluation via the **Add Evaluation** button.
 1. Select the following evaluators: `relevance`, `coherence`.
-1. Select the `gpt-4.1-mini` model for the evaluator.
+1. Select the `gpt-5-mini` model for the evaluator.
 1. Ensure you select all rows with responses; row 5 might have the response blocked.
 1. Select **Run Evaluation** → **Run Evaluation Only**.
 1. Review the scores for each response.

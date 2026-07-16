@@ -31,7 +31,7 @@ Everything you built today in Microsoft Foundry Toolkit has a production-grade e
 
 | What we did in Microsoft Foundry Toolkit | What you can do in Microsoft Foundry |
 |---------------------------|--------------------------------------|
-| Selected `gpt-4.1-mini` from the Model Catalog | Deploy and manage models with usage quotas, rate limits, and automatic failover |
+| Selected `gpt-5-mini` from the Model Catalog | Deploy and manage models with usage quotas, rate limits, and automatic failover |
 | Wrote a system prompt in the Instructions field | Instructions and system prompts in Foundry |
 | Connected a local MCP server with JSON data files | Connect production MCP servers backed by databases, APIs, and live services |
 | Ran 5 manual evaluation rows in the Evaluation tab | Run automated evaluation pipelines with hundreds of test cases on every commit |
