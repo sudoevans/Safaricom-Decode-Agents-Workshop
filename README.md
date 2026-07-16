@@ -2,6 +2,7 @@
 
 Build a bilingual (English, Swahili), AI agent for Savanna Bites restaurant (Nairobi), using the **Microsoft Foundry Toolkit** in VS Code and **Microsoft Foundry**.
 
+![app ui](/images/app-ui.png)
 
 ## Prerequisites
 
@@ -10,7 +11,6 @@ Build a bilingual (English, Swahili), AI agent for Savanna Bites restaurant (Nai
 - (Optional) Microsoft Foundry for models
 
 ## Getting Started
-
 
 1. [Fork](https://github.com/BethanyJep/Safaricom-Decode-Agents-Workshop/fork) this repository
 1. Clone your fork locally:
