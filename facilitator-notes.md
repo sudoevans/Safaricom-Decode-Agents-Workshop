@@ -24,7 +24,7 @@
 - [ ] GitHub account with GitHub Copilot subscription
 - [ ] Python 3.10+
 - [ ] Azure subscription with a Microsoft Foundry project
-- [ ] `gpt-4.1-mini` model deployed in the Foundry project
+- [ ] `gpt-5-mini` model deployed in the Foundry project
 
 ## Session Timeline
 
@@ -49,7 +49,7 @@
 
 ### 0:08 — Part 1: Model Exploration & Agent Creation (8 min)
 **What to say:**
-> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then browse the Microsoft Foundry Toolkit Model Catalog. Our model today is gpt-4.1-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
+> "First, we'll use GitHub Copilot Agent Mode to get model recommendations, then browse the Microsoft Foundry Toolkit Model Catalog. Our model today is gpt-5-mini via Microsoft Foundry — a good balance of quality, speed, and multilingual capability."
 
 **Common issue:** GitHub Copilot not available.
 - Ensure participant is signed into GitHub in VS Code (`Ctrl+Shift+P` → "Sign in to GitHub")
@@ -104,7 +104,7 @@
 
 **AI-assisted evaluation:**
 1. Add an evaluation with `relevance` and `coherence` evaluators
-1. Select `gpt-4.1-mini` as the evaluator model
+1. Select `gpt-5-mini` as the evaluator model
 1. Run and review scores.
 
 > **Note:** The first run of AI-assisted evaluations downloads dependencies — warn participants this may take a moment.
@@ -140,7 +140,7 @@
 | `ModuleNotFoundError: mcp` | `pip install mcp[cli]` not run | Run it; check correct Python env |
 | MCP server exits immediately | Python path issue or data file missing | Check `ls mcp-server/data/` for files |
 | Agent doesn't call tools | Tools not enabled in Agent Builder | Tick tools in the tools/MCP panel |
-| Bot answers in English even for Swahili input | Model ignoring language rule | Confirm instructions are saved; try gpt-4.1-mini |
+| Bot answers in English even for Swahili input | Model ignoring language rule | Confirm instructions are saved; try gpt-5-mini |
 | GitHub Copilot not available | Not signed in or no subscription | Sign in via VS Code; needs Copilot subscription |
 | `pip` not found | Python not in PATH or wrong Python | Use `python3 -m pip install mcp[cli]` |
 | Azure sign-in fails | Wrong tenant or expired token | Run `az login --tenant {your-tenant}` |

@@ -32,6 +32,6 @@ Build **Biashara Agent**, a bilingual customer assistant for Savanna Bites resta
 ## Additional Prerequisites
 
 - Azure subscription ([free trial](https://aka.ms/devrelft))
-- Microsoft Foundry project with a `gpt-4.1-mini` model deployment
+- Microsoft Foundry project with a `gpt-5-mini` model deployment
 
 Continue to [02-setup.md](02-setup.md).

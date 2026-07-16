@@ -52,7 +52,7 @@ You should see:
 ```
 🍽️  Biashara Agent Web App starting...
    Backend: Microsoft Foundry
-   Model: gpt-4.1-mini
+   Model: gpt-5-mini
    Endpoint: https://<your-project>.services.ai.azure.com
    Open http://127.0.0.1:5000 in your browser
 ```
@@ -103,7 +103,7 @@ You can customise the app with environment variables:
 | `AZURE_AI_ENDPOINT` | *(required for cloud)* | Your Microsoft Foundry project endpoint |
 | `AZURE_AI_KEY` | *(required for cloud)* | Your Microsoft Foundry API key |
 | `USE_FOUNDRY_LOCAL` | `false` | Set to `true` to use Foundry Local instead |
-| `MODEL` | `gpt-4.1-mini` (cloud) / `phi-4` (local) | Model name to use |
+| `MODEL` | `gpt-5-mini` (cloud) / `phi-4` (local) | Model name to use |
 | `ENDPOINT` | `http://localhost:5272/v1` | Override the Foundry Local endpoint (only used when `USE_FOUNDRY_LOCAL=true`) |
 
 Continue to [08-export-code.md](08-export-code.md).
